@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Lato:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+:root {
+    --mainTextColor: #000;
+    --secondaryTextColor: (51 51 51);
+    --mainLinkColor: #0da2b8;
+    --mainBorderColor: rgb(218, 218, 218);
+    --mainBgColor: rgb(249, 250, 251);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body {
+    /* font-family: "Lato", sans-serif; */
+    font-family: 'Readex Pro', sans-serif;
+    background-color: var(--mainBgColor);
+}
+
+/* Paragraphs, div elements */
+p,
+span,
+li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+#container-main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Class */
+.section-page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Id */
+#wrapper-hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio,
+a {
+    font-weight: 300;
+}
+
+#user-name {
+    font-size: 1.9em;
+    line-height: 1em;
+    padding-bottom: 1rem;
+}
+
+#email {
+    color: var(--mainTextColor);
+}
+
+#social-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: nowrap;
+}
+
+#social-list a {
+    
+}
+
+/* Images */
+#profile-pic {
+    border-radius: 50%;
+    width: 12rem;
+    height: 10rem;
+    object-fit: cover;
+}
