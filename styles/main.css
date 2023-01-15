@@ -3,7 +3,7 @@
 
 :root {
     --mainTextColor-light: #000;
-    --secondaryTextColor-light: (51 51 51);
+    --secondaryTextColor-light: rgb(51 51 51);
     --mainLinkColor-light: #0da2b8;
     --mainBorderColor-light: rgb(218, 218, 218);
     --mainBgColor-light: rgb(249, 250, 251);
@@ -15,7 +15,7 @@
     --mainBgColor-dark: #131415;
 
     --mainTextColor: #000;
-    --secondaryTextColor: (51 51 51);
+    --secondaryTextColor: rgb(51 51 51);
     --mainLinkColor: #0da2b8;
     --mainBorderColor: rgb(218, 218, 218);
     --mainBgColor: rgb(249, 250, 251);
@@ -50,11 +50,6 @@ a {
 
 li {
     line-height: 1.9em;
-}
-
-#container-main {
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 /* Class */
@@ -97,6 +92,11 @@ li {
 }
 
 /* Id */
+#container-main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 #wrapper-hero {
     display: flex;
     align-items: center;
