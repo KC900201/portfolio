@@ -1,0 +1,13 @@
+@import "config";
+
+#profile-pic {
+    border-radius: 50%;
+    width: 12rem;
+    height: 10rem;
+    object-fit: cover;
+
+    @media(max-width: $max-width) {
+        width: 200px;
+        height: 200px;
+    }
+}
