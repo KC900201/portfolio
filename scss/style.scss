@@ -43,6 +43,14 @@ li {
     }
 }
 
+.btn-toggle {
+    margin-top: 0.5rem;
+    border-radius: 20px;
+    width: 8rem;
+    background-color: $buttonBgColor;
+    font-weight: 300;
+}
+
 .card-techstack {
     border: 1px solid $mainBorderColor;
     padding: 0.5em 1em;
