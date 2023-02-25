@@ -11,20 +11,21 @@ $secondaryTextColor-light: rgb(51 51 51);
 $mainLinkColor-light: #0da2b8;
 $mainBorderColor-light: rgb(218, 218, 218);
 $mainBgColor-light: rgb(249, 250, 251);
+$buttonBgColor-light: rgb(243, 236, 236);
 
 $mainTextColor-dark: #fff;
 $secondaryTextColor-dark: #adb0b1;
 $mainLinkColor-dark: rgb(30, 190, 214);
 $mainBorderColor-dark: #2b3031;
 $mainBgColor-dark: #131415;
+$buttonBgColor-dark: rgb(18, 17, 17);
 
-$mainTextColor: #000;
-$secondaryTextColor: rgb(51 51 51);
-$mainLinkColor: #0da2b8;
-$mainBorderColor: rgb(218, 218, 218);
-$mainBgColor: rgb(249, 250, 251);
-
-$buttonBgColor: rgb(202, 188, 188);
+$mainTextColor: $mainTextColor-light;
+$secondaryTextColor: $secondaryTextColor-light;
+$mainLinkColor: $mainLinkColor-light;
+$mainBorderColor: $mainBorderColor-light;
+$mainBgColor: $mainBgColor-light;
+$buttonBgColor: $buttonBgColor-light;
 
 // @media config
 $max-width: 600px;

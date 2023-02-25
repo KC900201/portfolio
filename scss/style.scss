@@ -5,25 +5,21 @@
     margin: 0;
     line-height: 1.5em;
     box-sizing: border-box;
-    color: $mainTextColor;
 }
 
 body {
     font-family: $font-stack;
-    background-color: $mainBgColor;
 }
 
 // DOM elements
 p,
 span,
 li {
-    color: $secondaryTextColor;
     font-size: 1em;
 }
 
 a {
     text-decoration: none;
-    color: $mainLinkColor;
     font-size: 500;
     font-weight: 300;
 }
@@ -47,18 +43,15 @@ li {
     margin-top: 0.5rem;
     border-radius: 20px;
     width: 8rem;
-    background-color: $buttonBgColor;
     font-weight: 300;
 }
 
 .card-techstack {
-    border: 1px solid $mainBorderColor;
     padding: 0.5em 1em;
     border-radius: 5px;
 }
 
 .card-work-history {
-    border-left: 1px solid $mainBorderColor;
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
@@ -72,20 +65,13 @@ li {
 .card-project {
     padding-top: 1em;
     padding-bottom: 1em;
-    border-top: 1px solid $mainBorderColor;
 
     a {
-        color: $mainTextColor;
         transition: .03s;
-    }
-
-    a:hover {
-        color: $mainLinkColor;
     }
 }
 
 .line-break {
-    background-color: $mainBorderColor;
     height: 1px;
 }
 
@@ -116,10 +102,6 @@ li {
     padding-bottom: 1rem;
 }
 
-#email {
-    color: $mainTextColor;
-}
-
 #social-list {
     display: flex;
     justify-content: space-between;
@@ -128,11 +110,9 @@ li {
 
     a {
         font-size: 0.9em;
-        color: $secondaryTextColor;
     }
 
     a:hover {
-        color: $mainLinkColor;
         font-family: $social-font-hover-stack;
     }
 
@@ -148,6 +128,169 @@ li {
     flex-wrap: wrap;
     gap: 1em;
     font-size: .9em;
+}
+
+@mixin dark-mode {
+    * {
+        color: $mainTextColor-dark;
+    }
+
+    background-color: $mainBgColor-dark;
+
+    p,
+    span,
+    li {
+        color: $secondaryTextColor-dark;
+    }
+
+    a {
+        color: $mainLinkColor-dark;
+    }
+
+    .btn-toggle {
+        background-color: $buttonBgColor-dark;
+        border-color: $mainBorderColor-light;
+    }
+
+    .card-techstack {
+        border: 1px solid $mainBorderColor-dark;
+    }
+
+    .card-work-history {
+        border-left: 1px solid $mainBorderColor-dark;
+    }
+
+    .card-project {
+        border-top: 1px solid $mainBorderColor-dark;
+
+        a {
+            color: $mainTextColor-dark;
+        }
+
+        a:hover {
+            color: $mainLinkColor-dark;
+        }
+    }
+
+    .line-break {
+        background-color: $mainBorderColor-dark;
+    }
+
+    #email {
+        color: $mainTextColor-dark;
+    }
+
+    #social-list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1em;
+        flex-wrap: nowrap;
+
+        a {
+            font-size: 0.9em;
+            color: $secondaryTextColor;
+        }
+
+        a:hover {
+            color: $mainLinkColor;
+            font-family: $social-font-hover-stack;
+        }
+    }
+
+    #social-list {
+        a {
+            color: $secondaryTextColor-dark
+        }
+
+        a:hover {
+            color: $mainLinkColor-dark;
+        }
+    }
+}
+
+@mixin light-mode {
+    * {
+        color: $mainTextColor-light;
+    }
+
+    background-color: $mainBgColor-light;
+
+    p,
+    span,
+    li {
+        color: $secondaryTextColor-light;
+    }
+
+    a {
+        color: $mainLinkColor-light;
+    }
+
+    .btn-toggle {
+        background-color: $buttonBgColor-light;
+        border-color: $mainBorderColor-dark;
+    }
+
+    .card-techstack {
+        border: 1px solid $mainBorderColor-light;
+    }
+
+    .card-work-history {
+        border-left: 1px solid $mainBorderColor-light;
+    }
+
+    .card-project {
+        border-top: 1px solid $mainBorderColor-light;
+
+        a {
+            color: $mainTextColor-light;
+        }
+
+        a:hover {
+            color: $mainLinkColor-light;
+        }
+    }
+
+    .line-break {
+        background-color: $mainBorderColor-light;
+    }
+
+    #email {
+        color: $mainTextColor-light;
+    }
+
+    #social-list {
+        a {
+            color: $secondaryTextColor;
+        }
+
+        a:hover {
+            color: $mainLinkColor;
+        }
+    }
+
+    #social-list {
+        a {
+            color: $secondaryTextColor-light
+        }
+
+        a:hover {
+            color: $mainLinkColor-light;
+        }
+    }
+}
+
+.dark-mode {
+    @include dark-mode;
+}
+
+.light-mode {
+    @include light-mode;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        @include dark-mode;
+    }
 }
 
 // Images

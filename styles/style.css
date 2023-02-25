@@ -7,24 +7,20 @@
   margin: 0;
   line-height: 1.5em;
   box-sizing: border-box;
-  color: #000;
 }
 
 body {
   font-family: "Readex Pro", sans-serif;
-  background-color: rgb(249, 250, 251);
 }
 
 p,
 span,
 li {
-  color: rgb(51, 51, 51);
   font-size: 1em;
 }
 
 a {
   text-decoration: none;
-  color: #0da2b8;
   font-size: 500;
   font-weight: 300;
 }
@@ -48,18 +44,15 @@ li {
   margin-top: 0.5rem;
   border-radius: 20px;
   width: 8rem;
-  background-color: rgb(202, 188, 188);
   font-weight: 300;
 }
 
 .card-techstack {
-  border: 1px solid rgb(218, 218, 218);
   padding: 0.5em 1em;
   border-radius: 5px;
 }
 
 .card-work-history {
-  border-left: 1px solid rgb(218, 218, 218);
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
@@ -74,18 +67,12 @@ li {
 .card-project {
   padding-top: 1em;
   padding-bottom: 1em;
-  border-top: 1px solid rgb(218, 218, 218);
 }
 .card-project a {
-  color: #000;
   transition: 0.03s;
-}
-.card-project a:hover {
-  color: #0da2b8;
 }
 
 .line-break {
-  background-color: rgb(218, 218, 218);
   height: 1px;
 }
 
@@ -116,10 +103,6 @@ li {
   padding-bottom: 1rem;
 }
 
-#email {
-  color: #000;
-}
-
 #social-list {
   display: flex;
   justify-content: space-between;
@@ -128,10 +111,8 @@ li {
 }
 #social-list a {
   font-size: 0.9em;
-  color: rgb(51, 51, 51);
 }
 #social-list a:hover {
-  color: #0da2b8;
   font-family: "Lato", sans-serif;
 }
 
@@ -147,6 +128,179 @@ li {
   font-size: 0.9em;
 }
 
+.dark-mode {
+  background-color: #131415;
+}
+.dark-mode * {
+  color: #fff;
+}
+.dark-mode p,
+.dark-mode span,
+.dark-mode li {
+  color: #adb0b1;
+}
+.dark-mode a {
+  color: rgb(30, 190, 214);
+}
+.dark-mode .btn-toggle {
+  background-color: rgb(18, 17, 17);
+  border-color: rgb(218, 218, 218);
+}
+.dark-mode .card-techstack {
+  border: 1px solid #2b3031;
+}
+.dark-mode .card-work-history {
+  border-left: 1px solid #2b3031;
+}
+.dark-mode .card-project {
+  border-top: 1px solid #2b3031;
+}
+.dark-mode .card-project a {
+  color: #fff;
+}
+.dark-mode .card-project a:hover {
+  color: rgb(30, 190, 214);
+}
+.dark-mode .line-break {
+  background-color: #2b3031;
+}
+.dark-mode #email {
+  color: #fff;
+}
+.dark-mode #social-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: nowrap;
+}
+.dark-mode #social-list a {
+  font-size: 0.9em;
+  color: rgb(51, 51, 51);
+}
+.dark-mode #social-list a:hover {
+  color: #0da2b8;
+  font-family: "Lato", sans-serif;
+}
+.dark-mode #social-list a {
+  color: #adb0b1;
+}
+.dark-mode #social-list a:hover {
+  color: rgb(30, 190, 214);
+}
+
+.light-mode {
+  background-color: rgb(249, 250, 251);
+}
+.light-mode * {
+  color: #000;
+}
+.light-mode p,
+.light-mode span,
+.light-mode li {
+  color: rgb(51, 51, 51);
+}
+.light-mode a {
+  color: #0da2b8;
+}
+.light-mode .btn-toggle {
+  background-color: rgb(243, 236, 236);
+  border-color: #2b3031;
+}
+.light-mode .card-techstack {
+  border: 1px solid rgb(218, 218, 218);
+}
+.light-mode .card-work-history {
+  border-left: 1px solid rgb(218, 218, 218);
+}
+.light-mode .card-project {
+  border-top: 1px solid rgb(218, 218, 218);
+}
+.light-mode .card-project a {
+  color: #000;
+}
+.light-mode .card-project a:hover {
+  color: #0da2b8;
+}
+.light-mode .line-break {
+  background-color: rgb(218, 218, 218);
+}
+.light-mode #email {
+  color: #000;
+}
+.light-mode #social-list a {
+  color: rgb(51, 51, 51);
+}
+.light-mode #social-list a:hover {
+  color: #0da2b8;
+}
+.light-mode #social-list a {
+  color: rgb(51, 51, 51);
+}
+.light-mode #social-list a:hover {
+  color: #0da2b8;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #131415;
+  }
+  body * {
+    color: #fff;
+  }
+  body p,
+  body span,
+  body li {
+    color: #adb0b1;
+  }
+  body a {
+    color: rgb(30, 190, 214);
+  }
+  body .btn-toggle {
+    background-color: rgb(18, 17, 17);
+    border-color: rgb(218, 218, 218);
+  }
+  body .card-techstack {
+    border: 1px solid #2b3031;
+  }
+  body .card-work-history {
+    border-left: 1px solid #2b3031;
+  }
+  body .card-project {
+    border-top: 1px solid #2b3031;
+  }
+  body .card-project a {
+    color: #fff;
+  }
+  body .card-project a:hover {
+    color: rgb(30, 190, 214);
+  }
+  body .line-break {
+    background-color: #2b3031;
+  }
+  body #email {
+    color: #fff;
+  }
+  body #social-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: nowrap;
+  }
+  body #social-list a {
+    font-size: 0.9em;
+    color: rgb(51, 51, 51);
+  }
+  body #social-list a:hover {
+    color: #0da2b8;
+    font-family: "Lato", sans-serif;
+  }
+  body #social-list a {
+    color: #adb0b1;
+  }
+  body #social-list a:hover {
+    color: rgb(30, 190, 214);
+  }
+}
 #profile-pic {
   border-radius: 50%;
   width: 12rem;
